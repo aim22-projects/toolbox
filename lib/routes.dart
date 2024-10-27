@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-// import 'package:toolbox/screens/downloads.dart';
+import 'package:toolbox/screens/downloads_screen.dart';
 // import 'package:toolbox/screens/new_download.dart';
 // import 'package:toolbox/screens/settings.dart';
 
@@ -14,11 +14,11 @@ class AppRouteNames {
 final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
-    // GoRoute(
-    //   name: AppRouteNames.downloads,
-    //   path: '/',
-    //   builder: (context, state) => const DownloadsScreen(),
-    // ),
+    GoRoute(
+      name: AppRouteNames.downloads,
+      path: '/',
+      builder: (context, state) => const DownloadsScreen(),
+    ),
     // GoRoute(
     //   name: AppRouteNames.newDownload,
     //   path: '/new',
