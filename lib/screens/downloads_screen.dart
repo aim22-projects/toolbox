@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:toolbox/dialogs/new_download.dart';
 import 'package:toolbox/providers/downloads_provider.dart';
 // import 'package:toolbox/dialogs/new_download.dart';
 import 'package:toolbox/routes.dart';
@@ -84,7 +85,7 @@ class DownloadsScreenContent extends StatelessWidget {
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () async {
-              // await NewDownloadDialog.show(context, null);
+              await NewDownloadDialog.show(context, null);
               await downloadsProvider.fetchRecords();
             },
             child: const Icon(Icons.add),
